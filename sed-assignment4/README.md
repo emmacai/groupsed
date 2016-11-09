@@ -1,1 +1,0 @@
-# sed-assignment4
