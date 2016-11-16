@@ -1,5 +1,4 @@
 #! /bin/bash
-
 echo "What is your favorite color?"
 read FAVCOLOR
 echo "What season were you born in?"
@@ -22,5 +21,6 @@ fi
 
 echo 'Enter your SQL username to insert into database.'
 read USER
-
-mysql SurveyResults -u $USER --password="" -p -H -e "INSERT INTO tblSurvey (ID, FAVCOLOR, SEASON, BIRTHPLACE, AGE, FAVHOLIDAY, TIMESTAMP) VALUES ('$IDENTIFIER', '$FAVCOLOR', '$SEASON', '$BIRTHPLACE', $AGE, '$FAVHOLIDAY', '$TIMESTAMP'); "  #echo "$IDENTIFIER,$FAVCOLOR,$SEASON,$BIRTHPLACE,$AGE,$FAVHOLIDAY,$TIMESTAMP" >> survey.csv
+mysql SurveyResults -u $USER < SurveyResults.sql
+mysql SurveyResults -u $USER --password="" -H -e "INSERT INTO tblSurvey (ID, FAVCOLOR, SEASON, BIRTHPLACE, AGE, FAVHOLIDAY, TIMESTAMP) VALUES ('$IDENTIFIER', '$FAVCOLOR', '$SEASON', '$BIRTHPLACE', $AGE, '$FAVHOLIDAY', '$TIMESTAMP');"  #echo "$IDENTIFIER,$FAVCOLOR,$SEASON,$BIRTHPLACE,$AGE,$FAVHOLIDAY,$TIMESTAMP" >> survey.csv
+mysqldump -u $USER SurveyResults > SurveyResults.sql
