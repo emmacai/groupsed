@@ -14,11 +14,18 @@ read FAVHOLIDAY
 OPENSSL=$(which openssl) # broken on purpose
 TIMESTAMP=$(date)
 
+
 if [ -z $OPENSSL ]; then 
 IDENTIFIER=$(./rand 6)
 else
 IDENTIFIER=$(openssl rand -base64 6) #was 6
 fi
+
+FAVCOLOR=${FAVCOLOR//[^a-zA-Z0-9]/}
+SEASON=${SEASON//[^a-zA-Z0-9]/}
+BIRTHPLACE=${BIRTHPLACE//[^a-zA-Z0-9]/}
+AGE=${AGE//[^a-zA-Z0-9]/}
+FAVHOLIDAY=${FAVHOLIDAY//[^a-zA-Z0-9]/}
 
 echo 'Enter your SQL username to insert into database.'
 read USER
