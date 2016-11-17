@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.5.53, for debian-linux-gnu (x86_64)
 --
--- Host: localhost    Database: SurveyResults
+-- Host: 0.0.0.0    Database: SurveyResults
 -- ------------------------------------------------------
 -- Server version	5.5.53-0ubuntu0.14.04.1
 
@@ -39,7 +39,7 @@ CREATE TABLE `tblSurvey` (
 
 LOCK TABLES `tblSurvey` WRITE;
 /*!40000 ALTER TABLE `tblSurvey` DISABLE KEYS */;
-INSERT INTO `tblSurvey` VALUES ('ngqQEXjN','red','summer','apex',19,'christmas','Mon Nov 14 21:00:37 UTC 2016'),('0M0UMlbh','red','winter','cary',24,'halloween','Mon Nov 14 21:03:00 UTC 2016'),('6vEbLaYX','yellow','summer','chapel hill',20,'easter','Mon Nov 14 21:20:10 UTC 2016'),('TUI1f4VF','purple','fall','Durham',23,'new years','Mon Nov 14 21:22:43 UTC 2016'),('8Zr/Of3b','pink','winter','charlotte',19,'thanksgiving','Mon Nov 14 21:25:54 UTC 2016'),('/9mUjwiA','carolina blue','summer','wilmington',22,'4th of july','Mon Nov 14 21:26:41 UTC 2016'),('vtpURQTf','blah','blah','blah',33,'blah','Wed Nov 16 21:14:27 UTC 2016'),('MoQGdQyg','blah','blah','blah',1111,'blah','Wed Nov 16 21:21:31 UTC 2016');
+INSERT INTO `tblSurvey` VALUES ('ngqQEXjN','red','summer','apex',19,'christmas','Mon Nov 14 21:00:37 UTC 2016'),('0M0UMlbh','red','winter','cary',24,'halloween','Mon Nov 14 21:03:00 UTC 2016'),('6vEbLaYX','yellow','summer','chapel hill',20,'easter','Mon Nov 14 21:20:10 UTC 2016'),('TUI1f4VF','purple','fall','Durham',23,'new years','Mon Nov 14 21:22:43 UTC 2016'),('8Zr/Of3b','pink','winter','charlotte',19,'thanksgiving','Mon Nov 14 21:25:54 UTC 2016'),('/9mUjwiA','carolina blue','summer','wilmington',22,'4th of july','Mon Nov 14 21:26:41 UTC 2016');
 /*!40000 ALTER TABLE `tblSurvey` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-16 21:21:38
+-- Dump completed on 2016-11-16 21:47:50
